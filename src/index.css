@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: linear-gradient(100deg, rgb(40, 106, 182) 50%, #164880 0);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-wrapper {
+  background-color: #1c2737;
+  width: 25%;
+  min-width: 450px;
+  height: 600px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.header h1 {
+  color: #136f97;
+  font-weight: 600;
+  text-align: center;
+  margin: 50px 20px 20px 20px;
+  font-family: 'Josefin Slab', serif;
+}
+
+.header p {
+  color: #ccecf5;
+  font-weight: 300;
+  text-align: center;
+  margin: 20px 20px 50px 20px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.list {
+  width: 90%;
+  margin: auto;
+  max-height: 220px;
+  overflow-y: auto;
+  padding-right: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  border: 1px solid #d5d5d5;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: #579ae0;
+}
+
+.task-input {
+  width: 350px;
+  min-width: 250px;
+  padding: 15px 10px 10px 20px;
+  margin-right: 10px;
+  font-family: 'Josefin Sans', serif;
+  font-size: 15px;
+  color: #ccc;
+  background-color: #1d222b;
+  border: 1px solid #444;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.buttons {
+  display: flex;
+}
+
+.btn {
+  margin: 10px;
+}
+
+.add-task-btn {
+  min-width: 100px;
+  background-color: #136f97;
+  color: #ccc;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  outline: none;
+  cursor: pointer;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  padding-bottom: 5px;
+}
+
+.list-item span {
+  flex: 1;
+  color: grey;
+}
+
+
+
+.list-item span.completed {
+  color: grey; 
+  text-decoration: none; 
+}
+
+.task-checkbox {
+  margin-right: 10px;
+}
+
+.task-btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.btn-delete i {
+  font-size: 16px;
+  color: #bbb;
+  margin-right: 20px;
+}
+
+.btn-edit i {
+  font-size: 16px;
+  color: #bbb;
+  margin-right: 20px;
+}
+
+.clear-btn {
+  width: 100px;
+  height: 35px;
+  background-color: #136f97;
+  color: #ccc;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  outline: none;
+  cursor: pointer;
+}
+
+.no-tasks {
+  color: #777;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav div {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav div a {
+  text-decoration: none;
+  color: #1e7bc8;
+  position: relative; 
+}
+
+nav div a:first-child {
+  margin-right: 15px;
+}
+
+nav div a:last-child {
+  margin-left: 15px;
+}
+
+nav div span {
+  color: #1e7bc8;
+}
+
+nav div a.active {
+  color: #74a9e2;
+}
+
+nav div a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #74a9e2;
+}
+
+
+.completed-title{
+  color: #74a9e2;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+.pending-title{
+  color: #74a9e2;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 7px;
+  margin-bottom: -10px;
+}
+
+.btn-reopen {
+  background-color: #136f97; 
+  color: white;
+  border: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 12px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  outline: none;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 10px 20px;
+  transition: all 0.3s;
+}
+
+.btn-reopen:hover {
+  background-color: #0f5a79; 
+}
+
+
+
