@@ -17,7 +17,7 @@ TaskPhile is a task management web application built with React. It allows users
 To get started with TaskPhile, clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/yourusername/TaskPhile.git
+git clone https://github.com/Corenegasore123/TaskPhile.git
 cd TaskPhile
 npm install
 npm run dev
