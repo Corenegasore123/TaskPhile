@@ -9,10 +9,8 @@ TaskPhile is a task management web application built with React. It allows users
 - **Delete Tasks**: Remove tasks that are no longer required.
 - **Complete Tasks**: One is able to mark tasks as complete and also reopen them whenever necessary
 - **Responsive Design**: Accessible and usable on both desktop and mobile devices.
+-**Notification System**: Notifications so as to update you about your work
 
-## Live Demo
-
-You can see a live demo of TaskPhile [here](#).
 
 ## Installation
 
