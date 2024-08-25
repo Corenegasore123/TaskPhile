@@ -23,4 +23,5 @@ To get started with TaskPhile, clone the repository and install the dependencies
 git clone https://github.com/Corenegasore123/TaskPhile.git
 cd TaskPhile
 npm install
+npm run dev
 
